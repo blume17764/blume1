@@ -3,6 +3,64 @@
 <head>
   <title>롤이라는 것에 대한 고찰</title>
   <meta charset="utf-8">
+  <style>
+    body {
+      margin:0;
+    }
+    h1 {
+      font-size:64px;
+      text-align: center;
+      border-bottom:2px solid black;
+      margin:0;
+      padding:10px;
+    }
+    h2 {
+      text-align: left;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    ol {
+      border-right:2px solid black;
+      width:150px;
+      margin:0;
+      padding:20px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+    #grid ol {
+      padding-left: 33px
+    }
+    #article {
+      padding-left:0px;
+      margin:10px;
+    }
+    img {
+      padding-top: 10px;
+      display:block; margin: auto;
+    }
+    #timo {
+      text-align: center;
+      border-top: 2px solid black;
+      margin-left:0px;
+    }
+
+    @media(max-width:650px){
+      #grid {
+        display: block;
+    }
+    ol {
+      border-right:none;
+    }
+    h1 {
+      font-size:48px;
+      text-align: center;
+      border-bottom:none;
+    }
+  </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162815938-1"></script>
 <script>
@@ -17,7 +75,7 @@
 
 <body>
   <h1><a href="https://kr.leagueoflegends.com/ko-kr/" target="_blank">League of Legend</a></h1>
-  <h2>League of Legend, 리그 오브 레전드</h2>
+  <div id="grid">
     <ol>
       <li><a href="index.html">하위^^</a></li>
       <li><a href="1.html">시작화면</a></li>
@@ -26,24 +84,29 @@
       <li><a href="3.html">롤은 팀운망겜인가?</a></li>
     </ol>
 
-<h2>남탓의 세계에 오신걸 환영합니다. ^오^</h2>
-<p>
-평소 자신이 너무 착해 빠졌던 것 같다는 생각이 든다구요?<br>
-착한 사람 컴플렉스가 고민이었다구요?<br>
-그럼 바로 이 게임 <strong>"League of Legend", "롤"</strong> 이라는 게임을 시작해보십시오!<br>
-짧은 시간 안에 당신을 <strong>180도</strong> 다른 사람으로 변화시켜줄 것입니다.<br>
-고민하지마십시오. 지금 당장 시작하십시오.<br>
-이 게임은 <strong>무료</strong>로 해드립니다!<br>
-<h1><strong>^오^</strong></h1>
-<img src="timo.jpg"><br>
-<strong>이 씹쌔끼를 조심하십시오!</strong>
-</p>
-<p>
-<iframe width="960" height="540"
-src="https://www.youtube.com/embed/ZoXM9rnKV2Y"
-frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+      <div id="article">
+        <h2>남탓의 세계에 오신걸 환영합니다. ^오^</h2>
+          <p>
+          평소 자신이 너무 착해 빠졌던 것 같다는 생각이 든다구요?<br>
+          착한 사람 컴플렉스가 고민이었다구요?<br>
+          그럼 바로 이 게임 <strong>"League of Legend", "롤"</strong> 이라는 게임을 시작해보십시오!<br>
+          짧은 시간 안에 당신을 <strong>180도</strong> 다른 사람으로 변화시켜줄 것입니다.<br>
+          고민하지마십시오. 지금 당장 시작하십시오.<br>
+          이 게임은 <strong>무료</strong>로 해드립니다!<br>
+      
+          <div id="timo">
+            <img src="timo.jpg"><br>
 
+            <strong><div style="text-align:center">이 씹쌔끼를 조심하십시오!</strong>
+            </p>
+
+            <p>
+            <iframe width="960" height="540"
+            src="https://www.youtube.com/embed/ZoXM9rnKV2Y"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+      </div>
+  </div>
 <p>
   <div id="disqus_thread"></div>
 <script>
